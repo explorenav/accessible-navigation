@@ -1,0 +1,107 @@
+/*
+1.1 Header Area
+***************************************************/
+/*Bootstrap Reset*/
+    body{
+        font-size: 12px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .cssmenu{
+      font-size: 1em;
+      width: 100%;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    .cssmenu .mainMenu{
+      align-items: center;
+    }
+    .cssmenu .mainMenu li .nav-link{
+      color:#fff;
+    }
+    .cssmenu .mainMenu li .nav-link:hover{
+      background:none transparent;
+      color: #eeb211;
+    }
+    .cssmenu .mainMenu li.nav-item{
+      text-align: center;
+    }
+    .cssmenu .mainMenu li.nav-item.active{
+      color: #eeb211;
+    }
+    .cssmenu  .mainMenu li.nav-item.active .nav-link{
+      color: #eeb211;
+    }
+    #topmenu{
+        justify-content: space-between;
+    }
+    .cssmenu .mainMenu a{
+      text-transform: capitalize;
+      padding: 16px 15px;
+      font-weight: bold;
+      color: #fff;
+      white-space: inherit;
+      text-align:center;
+    }
+    .mainMenu .dropdown-menu, .mainMenu .dropdown-menu .submenu{
+      background-color: White;
+      color: Black;
+      text-align: left;
+      z-index: 999;
+      min-width: 250px;
+      border: 1px solid #d8d8d8;
+      padding: 15px;
+      border-radius:0;
+      list-style: none;
+      margin-top: 0;
+    }
+    @media screen and (min-width: 768px) {
+      .mainMenu .dropdown-menu .submenu{
+        top: 0;
+        left: 100%;
+        max-width: 270px;
+        position: absolute;
+        display: none;
+      }
+      .mainMenu .dropdown-menu .submenu.show{
+        display: block;
+      }
+      .cssmenu .mainMenu li.nav-item{
+        align-items: center;
+      }
+    }
+    @media screen and (max-width: 767px) {
+      .cssmenu .mainMenu li.nav-item{
+        width:100%;
+      }
+      .cssmenu .mainMenu .submenu{
+        border: none;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+    
+    .mainMenu .dropdown-menu li{
+      background: none transparent;
+      border: none;
+      width: 100%;
+    }
+    .mainMenu .dropdown-menu li a.dropdown-item{
+      color:#998B7d;
+      font-weight: normal;
+      padding: 5px;
+      font-size: 0.8em;
+      text-align: left;
+    }
+    .mainMenu .dropdown-menu li a.dropdown-item:hover {
+      background: none #fafafa;
+      color: #005595;
+    } 
+    .mainMenu li.dropdown ul li a.dropdown-toggle::after{
+      border-top: .3em solid transparent;
+      border-right: 0;
+      border-bottom: .3em solid transparent;
+      border-left: .3em solid;
+      position: absolute;
+      top: 11px;
+      left: -7px;
+    }
